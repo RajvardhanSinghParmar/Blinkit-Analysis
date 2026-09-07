@@ -1,10 +1,22 @@
-# 🚀 Blinkit Sales & Operations Analysis Using SQL
+# 🛒 Blinkit Sales & Operations Analysis Using SQL
 
 > **An end-to-end SQL analytics project analyzing sales performance, customer behavior, product performance, delivery operations, payment methods, and customer feedback using MySQL.**
 
 ---
 
-## 📌 Project Overview
+## 🔍 Project at a Glance
+
+| 📦 Orders | 👥 Customers | 🛍️ Products | 🗄️ Tables | ❓ Business Questions |
+| :-------: | :----------: | :----------: | :--------: | :------------------: |
+| *5,000* |   *2,500*  |    *268*   |    *6*   |        *20*        |
+
+| 🐬 Database | 🔍 Analysis | 🧹 Data Preparation |   💻 Primary Tool   |
+| :---------: | :---------: | :-----------------: | :-----------------: |
+|  *MySQL*  |   *SQL*   |   *Excel + SQL*   | *MySQL Workbench* |
+
+---
+
+## 📋 Project Overview
 
 Quick-commerce businesses operate in an environment where **sales performance, customer behavior, product availability, delivery reliability, and customer satisfaction** all influence business growth.
 
@@ -23,7 +35,7 @@ The objective is to transform raw transactional data into **actionable business 
 
 ---
 
-## 🎯 Business Problem
+## ⚠️ Business Problem
 
 For a quick-commerce business, increasing order volume alone does not provide a complete picture of business performance.
 
@@ -86,7 +98,7 @@ The project focuses on five major analytical areas:
 
 ---
 
-## 📊 Data Source
+## 🔗 Data Source
 
 The dataset used in this project is the **Blinkit Sales Dataset**, sourced from Kaggle.
 
@@ -274,19 +286,19 @@ The data model provides the structure used to connect customer, order, product, 
 ## 📁 Project Structure
 
 ```text
-blinkit-sql-analysis/
+📁 blinkit-sql-analysis/
 │
-├── README.md
+├── 📁 data/
+│    ├── raw/
+│    └── cleaned/
 │
-├── data/
-│   ├── raw/
-│   └── cleaned/
+├── 📁 data_model/
+│    └── blinkit_data_model.png
 │
-├── data_model/
-│   └── blinkit_data_model.png
+├── 📁 sql/
+│    └── blinkit_analysis.sql
 │
-└── sql/
-    └── blinkit_analysis.sql
+└── 📄README.md
 ```
 
 ### 📂 Folder Description
@@ -369,28 +381,46 @@ The analysis was divided into five business-focused groups.
 
 The project demonstrates practical SQL techniques commonly used in Data Analyst roles:
 
+### Core SQL
+
 * `SELECT`
 * `WHERE`
 * `GROUP BY`
 * `HAVING`
 * `ORDER BY`
-* `CASE`
-* `JOIN`
-* Subqueries
+* `CASE WHEN`
+* Aggregate functions
+
+### Joins
+
+* `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `SELF JOIN`, `CROSS JOIN`
+* Multi-table joins
+
+### CTEs
+
 * Common Table Expressions (CTEs)
-* Window Functions
+* Multi-step analytical queries
+* Breaking complex analysis into readable steps
+
+### Window Functions
+
 * `LAG()`
-* `ROW_NUMBER()`
-* `DENSE_RANK()`
 * `SUM() OVER()`
-* `COUNT()`
-* `AVG()`
-* `ROUND()`
-* Date functions
-* Percentage calculations
+* `ROW_NUMBER()`
+* `RANK()`
+* `DENSE_RANK()`
+* Windowed aggregations
+
+### Advanced Analysis
+
 * Running totals
 * Month-over-month analysis
-* Ranking and partitioning
+* Percentage contribution
+* Category-level ranking
+* Consecutive-order analysis
+* Previous-order comparisons
+* Average-based comparisons
+* Conditional aggregation
 
 ---
 
@@ -436,7 +466,7 @@ For example, the Baby Care category had a leader-to-second-place sales gap of ap
 
 Out of 5,000 orders:
 
-* ✅ **69.40%** were On Time
+* 🟢 **69.40%** were On Time
 * 🟡 **20.74%** were Slightly Delayed
 * 🔴 **9.86%** were Significantly Delayed
 
@@ -537,22 +567,14 @@ More importantly, the project demonstrates the ability to:
 
 ---
 
-# 🛠️ Tools & Skills
+# 🛠️ Tools Used
 
-### Tools
-
-**MySQL** • **MySQL Workbench** • **Excel**
-
-### Technical Skills
-
-**SQL** • **Data Cleaning** • **Data Validation** • **Data Analysis** • **Business Analysis** • **Relational Data Modeling**
-
-### SQL Skills
-
-**CTEs** • **Window Functions** • **Joins** • **Subqueries** • **Aggregations** • **Ranking** • **Time-Series Analysis** • **Conditional Logic**
+* **MySQL** — Database management and SQL analysis
+* **Microsoft Excel** — Initial data cleaning and validation
+* **GitHub** — Project documentation
 
 ---
 
-## ⭐ Key Skills Demonstrated
+## ⭐ Key Takeaway
 
-> **SQL Analytics | Data Cleaning | Data Validation | Business Problem Solving | Customer Analysis | Sales Analysis | Product Analysis | Operational Analytics | Customer Satisfaction Analysis**
+**The goal of this project was not just to write SQL queries, but to use SQL to answer real business questions and turn data into decisions.**
